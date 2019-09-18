@@ -1,21 +1,29 @@
 <template>
   <div>
-    <div style="background-image:url('https://www.lucenacity.gov.ph/images/banner7.jpg'); height:100%;background-repeat: no-repeat;
+    <div
+      style="background-image:url('https://i.postimg.cc/50TwzJPk/920-2123370039762660539.png'); height:100%;background-repeat: no-repeat;
   background-size: cover"
     >
-      <a-row style="height:100vh" type="flex" justify="start" >
-        <a-col data-aos="fade-up" data-aos-duration="50000" :push="1" :span="12" style="margin-top:20vh"  >
-          <div style="font-size: 52px; color:#ffffff; ">Lucena City</div>
-          <div style="font-size: 42px; color:#ffffff;">Ease of Doing Business Portal</div>
-          <p
-            style="margin-top:2vh; color:#ffffff"
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a-button style="margin-top:5vh" size="large" type="primary">Read More</a-button>
+      <a-row style="height:100vh" type="flex" justify="start">
+        <a-col
+          data-aos="fade-up"
+          data-aos-duration="50000"
+          :push="1"
+          :span="12"
+          style="margin-top:20vh"
+        >
+          <div style="font-size: 45px ; color: #FFFFFF" class="textShadow">Bayan ng Dolores Quezon</div>
+          <div style="font-size: 35px; color: #e4e2e2" class="textShadow">Ease of Doing Business Portal</div>
+          <p style="margin-top:2vh ; color:#e4e2e2" class="textShadow">
+            Ease of Doing Business Portal of Dolores is an online system that expedites the application process for business registration, in compliance with the Ease of Doing Business Act.
+            <br /><br/>Bayan ng Dolores created a unified business application form to make it easier to put up or renew businesses in Dolores, Quezon. It also features a zero-contact policy to reduce corruption.
+          </p>
+          <a-button class="buttonStyle" style="margin-top:5vh" size="large" type="primary">Read More</a-button>
         </a-col>
         <a-col :push="2" :span="8" style="margin-top:20vh;">
-          <a-card style="background: rgba(59, 79, 99, 0.62)">
+          <a-card style="background: #FFFFFF">
             <template slot="title">
-              <div style="color:#ffffff">Enter Crendetials</div>
+              <div style="color:#000000">Enter Credentials</div>
             </template>
             <a-form>
               <a-form-item>
@@ -34,7 +42,7 @@
                   />
                 </a-input>
               </a-form-item>
-              <a-button size="large" block ghost>Login</a-button>
+              <a-button class="buttonStyle" size="large" block type="primary">Login</a-button>
               <a-divider></a-divider>
               <p style="color:white">Login using facebook or google accounts</p>
               <a-row type="flex" gutter="16">
@@ -68,29 +76,29 @@
       align="middle"
       style="margin-top:10vh; margin-left:5vh; margin-right:5vh"
     >
-      <a-col :span="8" data-aos="fade-up" data-aos-duration="30000" >
-        <a-card title="News/Announcements">
+      <a-col :span="8" data-aos="fade-up" data-aos-duration="30000">
+        <a-card title="News/Announcements" bodyStyle="height: 350px">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a-divider></a-divider>
           <a-button type="primary" @click="$router.push('/news')">Read More</a-button>
         </a-card>
       </a-col>
-      <a-col :span="8" data-aos="fade-up" data-aos-duration="30000" >
-        <a-card title="Permits and Certificates">
+      <a-col :span="8" data-aos="fade-up" data-aos-duration="30000">
+        <a-card title="Permits and Certificates" bodyStyle="height: 350px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus laoreet non. Lectus mauris ultrices eros in cursus turpis. Consectetur a erat nam at lectus. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Ac turpis egestas maecenas pharetra. Donec pretium vulputate sapien nec. Scelerisque viverra mauris in aliquam.
           <a-divider></a-divider>
           <a-button type="primary" @click="$router.push('/permits')">Apply Now</a-button>
         </a-card>
       </a-col>
-      <a-col :span="8" data-aos="fade-up" data-aos-duration="30000" >
-        <a-card title=" Report Emergency/Calamity">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sed risus ultricies tristique nulla aliquet enim tortor at auctor. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Congue nisi vitae suscipit tellus mauris a. Viverra adipiscing at in tellus integer feugiat. Etiam sit amet nisl purus in. Curabitur gravida arcu ac tortor dignissim. Magna fermentum iaculis eu non diam phasellus vestibulum.
+      <a-col :span="8" data-aos="fade-up" data-aos-duration="30000">
+        <a-card class="cardHeight" title=" Report Emergency/Calamity" bodyStyle="height: 350px">
+         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sed risus ultricies tristique nulla aliquet enim tortor at auctora. Viverra adipiscing at in tellus integer feugiat. Etiam sit amet nisl purus in. Curabitur gravida arcu ac tortor dignissim. Magna fermentum iaculis eu non diam phasellus vestibulum.</p>
           <a-divider></a-divider>
           <a-button type="primary">Report</a-button>
         </a-card>
       </a-col>
     </a-row>
-    <a-row 
+    <a-row
       :gutter="16"
       type="flex"
       align="middle"
@@ -201,5 +209,14 @@ window.fbAsyncInit = function() {
   fjs.parentNode.insertBefore(js, fjs);
 })(document, "script", "facebook-jssdk");
 </script>
+
 <style>
+.textShadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+.buttonStyle {
+  background-color: #469a25 !important;
+  border-color: #469a25 !important;
+  color: #000000 !important
+}
 </style>
