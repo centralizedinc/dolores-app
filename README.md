@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dolores App
 
 ## Project setup
@@ -33,3 +34,7 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# dolores-app
+dolores quezon portal
+>>>>>>> 75bbf3ba7f884cab385e883b661c665f61b568e6
