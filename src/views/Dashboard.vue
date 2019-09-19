@@ -11,7 +11,7 @@
           <a-avatar src="https://i.postimg.cc/J47Nvpfn/Dolores-log.png" :size="50"></a-avatar>
         </a-col>
         <a-col :span="10">
-          <h3 style="color:#ffffff; ">Bayan ng Dolores</h3>
+          <h3 style="color:#ffffff; margin-left:20px ">Bayan ng Dolores</h3>
         </a-col>
         <a-col :span="10">
           <a-input-search placeholder="Search" @search="onSearch" />
@@ -31,7 +31,7 @@
       <a-row type="flex" justify="center">
         <a-col :span="4" style="margin-right:1vw">
           <a-card
-            style="margin-top:10vh; margin-bottom:2vh; background: linear-gradient(to right, #0575e6, #021b79);"
+            style="margin-top:10vh; margin-bottom:2vh; background: linear-gradient(to right, #469a25, #154102);"
           >
             <a-row type="flex" justify="center">
               <a-col :span="8">
@@ -88,18 +88,18 @@
               <p>Emergency Hotline</p>
               <a-row>
                 <a-col :span="12">
-                  <a-card style="background-color:#1A1693; cursor:pointer" class="emergency_btn">
+                  <a-card style="background-color:#ff000c; cursor:pointer" class="emergency_btn">
                     <a-row type="flex" justify="center">
-                      <a-col :span="12">
+                      <a-col :span="26">
                         <a-icon type="fire" @click="report(1)" style="color:#ffffff;font-size:24px"></a-icon>
                       </a-col>
                     </a-row>
                   </a-card>
                 </a-col>
                 <a-col :span="12">
-                  <a-card style="background-color:#1A1693; cursor:pointer" class="emergency_btn">
+                  <a-card style="background-color:#ff000c; cursor:pointer" class="emergency_btn">
                     <a-row type="flex" justify="center">
-                      <a-col :span="12">
+                      <a-col :span="26">
                         <a-icon
                           type="sound"
                           @click="report(1)"
@@ -110,9 +110,9 @@
                   </a-card>
                 </a-col>
                 <a-col :span="12">
-                  <a-card style="background-color:#1A1693; cursor:pointer" class="emergency_btn">
+                  <a-card style="background-color:#ff000c; cursor:pointer" class="emergency_btn">
                     <a-row type="flex" justify="center">
-                      <a-col :span="12">
+                      <a-col :span="26">
                         <a-icon
                           type="alert"
                           @click="report(1)"
@@ -123,9 +123,9 @@
                   </a-card>
                 </a-col>
                 <a-col :span="12">
-                  <a-card style="background-color:#1A1693; cursor:pointer" class="emergency_btn">
+                  <a-card style="background-color:#ff000c; cursor:pointer" class="emergency_btn">
                     <a-row type="flex" justify="center">
-                      <a-col :span="12">
+                      <a-col :span="26">
                         <a-icon
                           type="safety"
                           @click="report(1)"
@@ -136,7 +136,7 @@
                   </a-card>
                 </a-col>
                 <a-col :span="24" style="margin-top:2vh">
-                  <a-button block ghost type="primary">View Incident Reports</a-button>
+                  <a-button block ghost type="primary">View Reports</a-button>
                 </a-col>
               </a-row>
             </a-card>
@@ -145,10 +145,10 @@
       </a-row>
     </a-layout-content>
     <a-layout-footer
-      style="background: linear-gradient(to left, #0575e6, #021b79); color: #ffffff"
-    >Lucena City</a-layout-footer>
+      style="background: linear-gradient(to bottom, #469a25, #154102); color: #ffffff"
+    >Dolores Quezon</a-layout-footer>
 
-    <a-modal :visible="visible" title="Report Incident">
+    <a-modal :visible="visible" title="Report Incident" @cancel="handleCancel">
       <GmapMap
         id="map"
         ref="map"
@@ -162,8 +162,10 @@
       </GmapMap>
       <template slot="footer">
         <a-button
+          class="emergencyButton"
           key="submit"
           type="primary"
+          block
           :loading="loading"
           @click="submitReport"
         >Confirm and Submit</a-button>
@@ -179,7 +181,7 @@ export default {
       collapsed: false,
       user: {},
       visible: false,
-      coordinates: { lat: 13.9413957, lng: 121.6234471 },
+      coordinates: { lat: 14.017685, lng: 121.417034 },
       animation: {}
     };
   },
@@ -223,6 +225,10 @@ export default {
           console.log("Cancel");
         }
       });
+    },
+    handleCancel() {
+      console.log("Clicked cancel button");
+      this.visible = false;
     }
   }
 };
@@ -230,7 +236,12 @@ export default {
 
 <style>
 .emergency_btn:hover {
-  background: linear-gradient(to bottom, #0575e6, #021b79);
+  background: linear-gradient(to bottom, #ff000c, #ab020a);
   transform: scale(0.95);
+}
+.emergencyButton {
+  background-color: #ff000c !important;
+  border-color: #ff000c !important;
+  color: #000000 !important;
 }
 </style>

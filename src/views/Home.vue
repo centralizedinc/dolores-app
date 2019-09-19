@@ -38,21 +38,21 @@
           <h1 style="color:#ffffff">Get in touch</h1>
           <!-- <a-divider></a-divider> -->
           <p>
-            <a-icon type="phone"></a-icon>Hotline: 123-3456
+            <a-icon type="phone" style="margin-right: 5px"></a-icon>Hotline: 123-3456
           </p>
           <p>
-            <a-icon type="global"></a-icon>Website:
+            <a-icon type="global" style="margin-right: 5px"></a-icon>Website:
             <a
               style="color:#ffffff"
-              href="https://www.lucenacity.gov.ph/"
-            >https://www.lucenacity.gov.ph/</a>
+              href="https://www.doloresquezon.gov.ph/"
+            >https://www.doloresquezon.gov.ph/</a>
           </p>
           <p>
-            <a-icon type="facebook"></a-icon>Facebook:
+            <a-icon type="facebook" style="margin-right: 5px"></a-icon>Facebook:
             <a
               style="color:#ffffff"
-              href="https://www.facebook.com/RoderickDondonAlcala/"
-            >lucena.city</a>
+              href="https://www.facebook.com/OrlanCalayagOfficial/"
+            >Bayan ng Dolores</a>
           </p>
           <a-divider></a-divider>
         </a-col>

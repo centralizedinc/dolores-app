@@ -27,8 +27,8 @@
           <div align="center">
             <p>
               Republic of the Philippines
-              <br />City of Lucena
-              <br />OFFICE OF THE CITY MAYOR
+              <br />Dolores Quezon
+              <br />OFFICE OF THE MAYOR
               <br />
               {{form.application.permit_type}} and Licensing Office
               <br />Telephone no. +63 42 710-8892

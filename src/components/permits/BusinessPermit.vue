@@ -542,12 +542,17 @@
                       >{{form.billing_info.contact}}</a-card-grid>
                     </a-card>
                   </a-card>
-                  <a-modal v-model="visible" data-backdrop="static" data-keyboard="false">
+                  <a-modal
+                    v-model="visible"
+                    data-backdrop="static"
+                    data-keyboard="false"
+                    @cancel="warning"
+                  >
                     <template slot="footer">
-                      <a-button>
+                      <a-button class="buttonStyle">
                         <a-icon type="download" />Download
                       </a-button>
-                      <a-button @click="confirm()">Confirm</a-button>
+                      <a-button class="buttonStyle" @click="confirm()">Confirm</a-button>
                     </template>
                     <div align="center">
                       <h2>Amount Due (before fee)</h2>
@@ -574,10 +579,10 @@
     </a-row>
     <a-row type="flex" justify="end" :gutter="16">
       <a-col :span="3">
-        <a-button block ghost type="primary" @click="step_curr--">Back</a-button>
+        <a-button class="buttonStyle" block ghost type="primary" @click="step_curr--">Back</a-button>
       </a-col>
       <a-col :span="3">
-        <a-button block type="primary" @click="step_curr++">Next</a-button>
+        <a-button class="buttonStyle" block type="primary" @click="step_curr++">Next</a-button>
       </a-col>
     </a-row>
   </a-card>
@@ -788,6 +793,12 @@ export default {
     }
   },
   methods: {
+    warning() {
+      console.log("warning message");
+      this.$message.error(
+        "Please choose to download or confirm to close this window"
+      );
+    },
     payment_method(data) {
       console.log("payment method: " + data);
       this.pay_type = data;
@@ -982,7 +993,7 @@ export default {
       }
       axios.post("permit/apply", this.form).then(save_permit => {
         console.log("saved permit" + JSON.stringify(save_permit));
-        this.redirect("mainView");
+        this.$router.push("permits");
       });
     }
   }

@@ -80,21 +80,21 @@
         <a-card title="News/Announcements" bodyStyle="height: 350px">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a-divider></a-divider>
-          <a-button type="primary" @click="$router.push('/news')">Read More</a-button>
+          <a-button class="buttonStyle" type="primary" @click="$router.push('/news')">Read More</a-button>
         </a-card>
       </a-col>
       <a-col :span="8" data-aos="fade-up" data-aos-duration="30000">
         <a-card title="Permits and Certificates" bodyStyle="height: 350px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus laoreet non. Lectus mauris ultrices eros in cursus turpis. Consectetur a erat nam at lectus. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Ac turpis egestas maecenas pharetra. Donec pretium vulputate sapien nec. Scelerisque viverra mauris in aliquam.
           <a-divider></a-divider>
-          <a-button type="primary" @click="$router.push('/permits')">Apply Now</a-button>
+          <a-button class="buttonStyle" type="primary" @click="$router.push('/permits')">Apply Now</a-button>
         </a-card>
       </a-col>
       <a-col :span="8" data-aos="fade-up" data-aos-duration="30000">
         <a-card class="cardHeight" title=" Report Emergency/Calamity" bodyStyle="height: 350px">
          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Sed risus ultricies tristique nulla aliquet enim tortor at auctora. Viverra adipiscing at in tellus integer feugiat. Etiam sit amet nisl purus in. Curabitur gravida arcu ac tortor dignissim. Magna fermentum iaculis eu non diam phasellus vestibulum.</p>
           <a-divider></a-divider>
-          <a-button type="primary">Report</a-button>
+          <a-button class="buttonStyle" type="primary">Report</a-button>
         </a-card>
       </a-col>
     </a-row>

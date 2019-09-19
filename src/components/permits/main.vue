@@ -1,77 +1,93 @@
 <template>
-  <a-row type="flex" :gutter="24">
-    <a-col :span="8" style="margin-top:2vh">
-      <a-card>
-        <h4 style="color:#0F82E0">Business Permit</h4>
-        <p>Business licenses are permits issued by government agencies that allow individuals or companies to conduct business within the government's geographical jurisdiction.</p>
-        <template slot="actions">
-          <a-icon type="edit" @click="redirect('business-permit')" />
-          <a-icon type="redo" />
-        </template>
-      </a-card>
+<a-row type="flex" :gutter="3"  >
+    <a-col :span="8 "  style="margin-top:1vh; text-align: center">
+        <a-card bodyStyle="background-color:#c8d5b9" hoverable>
+            <template class="ant-card-actions" slot="actions">
+                <a-tooltip placement="top">
+                    <template slot="title">
+                        <span>Apply</span>
+                    </template>
+                    <a-icon type="edit" @click="redirect('business-permit')"/>
+                </a-tooltip>
+            </template>
+
+            <a-card-meta title="Mayor's Permit" description="or Business Permit for every company and business ">
+            </a-card-meta>
+        </a-card>
     </a-col>
-    <a-col :span="8" style="margin-top:2vh">
-      <a-card>
-        <h4>Sanity Permit</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <template slot="actions">
-          <a-icon type="edit" />
-          <a-icon type="redo" />
-        </template>
-      </a-card>
+    <a-col :span="8 "style="margin-top:1vh; text-align: center">
+       <a-card bodyStyle="background-color:#c8d5b9" hoverable>
+            <template class="ant-card-actions" slot="actions">
+                <a-tooltip placement="top">
+                    <template slot="title">
+                        <span>Apply</span>
+                    </template>
+                    <a-icon type="edit" />
+                </a-tooltip>
+            </template>
+
+            <a-card-meta title="Sanitary Permit" description="Food and Non-food business establishments">
+            </a-card-meta>
+        </a-card>
     </a-col>
-    <a-col :span="8" style="margin-top:2vh">
-      <a-card>
-        <h4 style="color:#0F82E0">Mayor's Permit</h4>
-        <p>How to get a Mayor’s Business Permit or license in the Philippines? A business permit or license from the Local Government Units (LGU) is one of the important requirements for every business or company to operate in the Philippines.</p>
-        <template slot="actions">
-          <a-icon type="edit" />
-          <a-icon type="redo" />
-        </template>
-      </a-card>
+     <a-col :span="8 " style="margin-top:1vh; text-align: center">
+       <a-card bodyStyle="background-color:#c8d5b9" hoverable>
+            <template class="ant-card-actions" slot="actions">
+                <a-tooltip placement="top">
+                    <template slot="title">
+                        <span>Apply</span>
+                    </template>
+                    <a-icon type="edit" />
+                </a-tooltip>
+            </template>
+
+            <a-card-meta title="Occupancy Permit" description="(Mayor's Permit)">
+            </a-card-meta>
+        </a-card>
     </a-col>
-    <a-col :span="8" style="margin-top:2vh">
-      <a-card>
-        <h4>Barangay Clearance</h4>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <template slot="actions">
-          <a-icon type="edit" />
-          <a-icon type="redo" />
-        </template>
-      </a-card>
+    <!-- <a-col :span="8 "style="margin-top:1vh; text-align: center">
+       <a-card bodyStyle="background-color:#c8d5b9" hoverable>
+            <template class="ant-card-actions" slot="actions">
+                <a-tooltip placement="top">
+                    <template slot="title">
+                        <span>Apply</span>
+                    </template>
+                    <a-icon type="edit" />
+                </a-tooltip>
+            </template>
+
+            <a-card-meta title="Other Permits" description="(Mayor's Permit)">
+            </a-card-meta>
+        </a-card>
+    </a-col> -->
+    <a-col :span="8 " style="margin-top:1vh; text-align: center">
+       <a-card bodyStyle="background-color:#c8d5b9" hoverable>
+            <template class="ant-card-actions" slot="actions">
+                <a-tooltip placement="top">
+                    <template slot="title">
+                        <span>Apply</span>
+                    </template>
+                    <a-icon type="edit" />
+                </a-tooltip>
+            </template>
+
+            <a-card-meta title="Applied Permit" description="Check status of application">
+            </a-card-meta>
+        </a-card>
     </a-col>
-    <a-col :span="8" style="margin-top:2vh">
-      <a-card>
-        <h4>Other Permits</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <template slot="actions">
-          <a-icon type="edit" />
-          <a-icon type="redo" />
-        </template>
-      </a-card>
-    </a-col>
-    <a-col :span="8" style="margin-top:2vh">
-      <a-card>
-        <h4>See All Permits Filed</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <template slot="actions">
-          <a-icon type="edit" @click="redirect('Transactions')" />
-          <a-icon type="redo" />
-        </template>
-      </a-card>
-    </a-col>
-  </a-row>
+   
+</a-row>
 </template>
 
 <script>
-export default {
-  methods: {
-    redirect(nav) {
-      this.$emit("redirect", nav);
-    }
-  }
-};
+export default {};
 </script>
 
 <style>
+.permitButtons {
+    height: 10vh;
+    background-color: #c8d5b9 !important;
+    border-color: #faf3dd !important;
+    color: #000000 !important;
+}
 </style>
