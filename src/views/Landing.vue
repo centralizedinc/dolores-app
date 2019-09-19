@@ -166,7 +166,7 @@
    <div class="fb-customerchat"
         attribution=setup_tool
         page_id="115862123135923"
-        theme_color="#67b868">
+      theme_color="#67b868">
   </div>
 </template>
 
