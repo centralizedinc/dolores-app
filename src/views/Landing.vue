@@ -164,10 +164,9 @@
     </a-row>
     <div id="fb-root"></div>
    <div class="fb-customerchat"
-      attribution=setup_tool
-      page_id="115862123135923"
-      theme_color="#fa3c4c">
-    </div>
+        attribution=setup_tool
+        page_id="115862123135923"
+  theme_color="#67b868">
   </div>
 </template>
 
